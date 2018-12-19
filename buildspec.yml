@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=arushi0404patni_Demo-java-app -Dsonar.organization=arushi0404patni-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=83060cd46ced0992426f04bd172d7ae0f80f634e
+      - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=arushi0404patni_Demo-java-app -Dsonar.organization=arushi0404patni-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=83060cd46ced0992426f04bd172d7ae0f80f634e
   post_build:
     commands:
       - echo Build completed on `date`
